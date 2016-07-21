@@ -30,21 +30,30 @@ public class ApplicationContextConfig {
  	
 	@Bean(name = "dataSource")
 	public DataSource getDataSource() {
+		System.out.println("its is getting into dataSource");
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		System.out.println("in test88");
 		dataSource.setDriverClassName("org.h2.Driver");
+		System.out.println("in test99");
 		dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+		System.out.println("in test00");
 
 		dataSource.setUsername("sa");
+		System.out.println("in test tt");
 		dataSource.setPassword("password");
+		System.out.println("in test nn");
 		return dataSource;
 	}
     
    
     
     private Properties getHibernateProperties() {
+    	System.out.println("in test er");
     	Properties properties = new Properties();
     	properties.put("hibernate.show_sql", "true");
+    	System.out.println("in test ft");
      	properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
+     	System.out.println("in test ff");
     	return properties;
     }
     

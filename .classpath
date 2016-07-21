@@ -23,25 +23,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/Venkatesh-Mac-SSD/NIIT/Requirements MAC/apache-tomcat-8.0.36/apache-tomcat-8.0.36/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="/Users/venkatesh/.m2/repository/org/springframework/spring-context/4.3.1.RELEASE/spring-context-4.3.1.RELEASE.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.archivename" value="spring-context-4.3.1.RELEASE.jar"/>
-			<attribute name="maven.groupId" value="org.springframework"/>
-			<attribute name="maven.artifactId" value="spring-context"/>
-			<attribute name="maven.version" value="4.3.1.RELEASE"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/Users/Venkatesh-Mac-SSD/NIIT/Requirements MAC/apache-tomcat-8.0.36/apache-tomcat-8.0.36/lib/tomcat-jdbc.jar"/>
-	<classpathentry kind="lib" path="/Users/venkatesh/.m2/repository/org/hibernate/hibernate-core/5.2.1.Final/hibernate-core-5.2.1.Final.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.hibernate"/>
-			<attribute name="maven.artifactId" value="hibernate-core"/>
-			<attribute name="maven.version" value="5.2.1.Final"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -46,6 +46,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	public Category get(String id) {
 		String hql = "from Category where id=" + "'"+ id +"'";
 		//  from category where id = '101'
+		@SuppressWarnings("deprecation")
 		Query query =  sessionFactory.getCurrentSession().createQuery(hql);
 		List<Category> listCategory = (List<Category>) query.list();
 		
