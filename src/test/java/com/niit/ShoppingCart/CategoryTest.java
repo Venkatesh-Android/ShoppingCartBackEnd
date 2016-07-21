@@ -21,19 +21,21 @@ public class CategoryTest {
 	   
 	   Category category = 	(Category) context.getBean("category");
 	   System.out.println("in test2");
-	   category.setId("CG120");
+	   category.setId("CG121");
 	   System.out.println("in test3");
-	   category.setName("CGName120");
+	   category.setName("CGName121");
 	   System.out.println("in test4");
-	   category.setDescription("CGDesc120");
+	   category.setDescription("Description121");
 	   System.out.println("in test 5");
 	   
 	   
 	   categoryDAO.saveOrUpdate(category);
 	   System.out.println("in test 6");
 	   
-	   
-	   
+	  /*
+	   This funciton will delete details from h2 db if id is given, as given below
+	   categoryDAO.delete("CG121");
+	   */
 	
 	  if(   categoryDAO.get("sdfsf") ==null)
 	  {

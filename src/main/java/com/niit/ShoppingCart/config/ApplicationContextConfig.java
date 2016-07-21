@@ -17,6 +17,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.niit.ShoppingCart.dao.CategoryDAO;
 import com.niit.ShoppingCart.dao.CategoryDAOImpl;
 import com.niit.ShoppingCart.model.Category;
+import com.niit.ShoppingCart.model.Product;
+import com.niit.ShoppingCart.model.Supplier;
 
 @Configuration
 @ComponentScan("com.niit.ShoppingCart")
@@ -63,6 +65,8 @@ public class ApplicationContextConfig {
     	LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
     	sessionBuilder.addProperties(getHibernateProperties());
     	sessionBuilder.addAnnotatedClass(Category.class);
+    	sessionBuilder.addAnnotatedClass(Supplier.class);
+    	sessionBuilder.addAnnotatedClass(Product.class);
       	return sessionBuilder.buildSessionFactory();
     }
     
