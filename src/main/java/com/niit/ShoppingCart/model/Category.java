@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class Category {
 
 	
-	
+	@Id
 	private String id;
 
 	@Column(name="name")
