@@ -19,6 +19,7 @@ import com.niit.ShoppingCart.dao.CategoryDAOImpl;
 import com.niit.ShoppingCart.model.Category;
 import com.niit.ShoppingCart.model.Product;
 import com.niit.ShoppingCart.model.Supplier;
+import com.niit.ShoppingCart.model.User;
 
 @Configuration
 @ComponentScan("com.niit.ShoppingCart")
@@ -67,6 +68,7 @@ public class ApplicationContextConfig {
     	sessionBuilder.addAnnotatedClass(Category.class);
     	sessionBuilder.addAnnotatedClass(Supplier.class);
     	sessionBuilder.addAnnotatedClass(Product.class);
+    	sessionBuilder.addAnnotatedClass(User.class);
       	return sessionBuilder.buildSessionFactory();
     }
     
